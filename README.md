@@ -1,4 +1,4 @@
-This is ns-3-allinone.
+This is ns-3-allinone. _(3.27)_
 
 If you have downloaded this in tarball release format, this directory
 contains some released ns-3 version, along with 3rd party components
@@ -17,3 +17,19 @@ basic ns-3 (netanim and ns-3-dev) is to type:
 ./build.py
 and cd into ns-3-dev for further work.  Consult the bake documentation
 on how to use bake to access optional ns-3 components.
+
+## Additional modules
+
+https://github.com/nyuwireless-unipd/ns3-mmwave/releases/tag/v1.2
+
+https://github.com/mark-claypool/bbr
+
+## Compilation
+
+`python build.py`
+
+`g++ -v`
+gcc version 7.3.0 (Ubuntu 7.3.0-27ubuntu1~18.04) 
+
+`make -v`
+GNU Make 4.1
