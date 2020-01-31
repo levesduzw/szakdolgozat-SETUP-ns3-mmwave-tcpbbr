@@ -1,35 +1,21 @@
-This is ns-3-allinone. _(3.27)_
+## ns-3-allinone + mmwave module + TCP BBR + LOS-NLOS time tracing
 
-If you have downloaded this in tarball release format, this directory
-contains some released ns-3 version, along with 3rd party components
-necessary to support all optional ns-3 features, such as Python
-bindings and the Network Animator.  In this case, just run the
-script build.py; all the components, plus ns-3 itself, will thus be
-built.  This directory also contains the bake build tool, which allows
-access to several additional modules including the Network Simulation
-Cradle, Direct Code Execution environment, and click and openflow 
-extensions for ns-3.
+This repository contains the source from which I built my ns-3 test environments on GCP VMs. The repository is 41 MB compressed, 155 MB uncompressed.
 
-If you have downloaded this from mercurial, the download.py script will
-download bake, netanim, pybindgen, and ns-3-dev.  The usage to use
-basic ns-3 (netanim and ns-3-dev) is to type:
-./download.py
-./build.py
-and cd into ns-3-dev for further work.  Consult the bake documentation
-on how to use bake to access optional ns-3 components.
+Included software versions are:
 
-## Additional modules
+| Component | Version |
+|-----------|------------|
+| ns-3 | 3.27 |
+| [mmWave module](https://github.com/nyuwireless-unipd/ns3-mmwave/releases/tag/v1.2) | 1.2 |
+| [BBR module](https://github.com/mark-claypool/bbr) | latest |
 
-https://github.com/nyuwireless-unipd/ns3-mmwave/releases/tag/v1.2
-
-https://github.com/mark-claypool/bbr
-
-## Compilation
-
-`python build.py`
-
+### Requirements:
 `g++ -v`
 gcc version 7.3.0 (Ubuntu 7.3.0-27ubuntu1~18.04) 
 
 `make -v`
 GNU Make 4.1
+### Compile:
+
+`python build.py`
